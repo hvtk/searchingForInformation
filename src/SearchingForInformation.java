@@ -3,7 +3,7 @@ import java.util.*;
 public class SearchingForInformation {
     public static void main(String[] args) {
 
-        HashMap<String, ArrayList>  userInformation = new HashMap<String, ArrayList>();
+        Map<String, ArrayList>  userInformation = new HashMap<String, ArrayList>();
 
         ArrayList newUsername = new ArrayList();
         newUsername.add("Henk van 't Kruijs");
@@ -21,17 +21,13 @@ public class SearchingForInformation {
 
         userInformation.put("ID_1", newUsername);
 
-        Set<Map.Entry<String, ArrayList>> setMap = userInformation.entrySet();
-        Iterator<Map.Entry<String, ArrayList>> iteratorMap = setMap.iterator();
+        System.out.println("The usernames are: " + newUsername );
 
-        System.out.println("\nHashmap with multiple Values");
+        Iterator<String> iter = newUsername.iterator();
 
-        while(iteratorMap.hasNext()) {
-            Map.Entry<String, ArrayList> entry =
-                    (Map.Entry<String, ArrayList>) iteratorMap.next();
-            String key = entry.getKey();
-            List values = entry.getValue();
-            System.out.println("Key = '" + key + "' has values: " + values);
+        System.out.println("\nThe iterator values" + " of newUsername are: ");
+        while (iter.hasNext()) {
+            System.out.println(iter.next() + " ");
         }
     }
 }
