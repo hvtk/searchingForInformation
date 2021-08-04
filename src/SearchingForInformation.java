@@ -3,32 +3,22 @@ import java.util.*;
 public class SearchingForInformation {
     public static void main(String[] args) {
 
-        Map<String, ArrayList>  userInformation = new HashMap<String, ArrayList>();
+        Scanner userInformation = new Scanner(System.in);    //System.in is a standard input stream
+        System.out.print("Enter the username: ");
+        String username = userInformation.nextLine();
+        System.out.print("Enter the password: ");
+        String password = userInformation.nextLine();
+        System.out.print("Enter your age: ");
+        String age = userInformation.nextLine();
+        System.out.print("Enter your postalcode: ");
+        String postalCode = userInformation.nextLine();
 
-        ArrayList newUsername = new ArrayList();
-        newUsername.add("Henk van 't Kruijs");
-        newUsername.add("Mirjam van 't Kruijs");
-
-
-        ArrayList newPassword = new ArrayList();
-        newPassword.add("12345678");
-
-        ArrayList newAge = new ArrayList();
-        newAge.add("53 jaar");
-
-        ArrayList newPostalCode = new ArrayList();
-        newPostalCode.add("6717 SV");
-
-        userInformation.put("ID_1", newUsername);
-
-        System.out.println("The usernames are: " + newUsername );
-
-        Iterator<String> iter = newUsername.iterator();
-
-        System.out.println("\nThe iterator values" + " of newUsername are: ");
-        while (iter.hasNext()) {
-            System.out.println(iter.next() + " ");
-        }
+        System.out.println("The userinformation is:");
+        System.out.println("Username: " + username);
+        System.out.println("Password: " +  password);
+        System.out.println("Age: " + age);
+        System.out.println("Postalcode: " + postalCode);
     }
 }
+
 
