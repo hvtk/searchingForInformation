@@ -44,11 +44,24 @@ public class SearchingForInformation {
         Problem loneliness = new Problem(ProblemTypes.EMOTIONALPROBLEMS);
 
         Scanner problem_type = new Scanner(System.in);
-        System.out.print("Enter your problem: ");
+        System.out.println("Make a choice of one of the problem-groups below: ");
+        System.out.println("Emotional problems:");
+        System.out.println("Menthal health problems:");
+        System.out.println("Physical complaints:");
+        System.out.println("Physical violence:");
+        System.out.print("The choice is: ");
+
         String firstProblem = problem_type.nextLine();
         System.out.println("The selected problem is: " + firstProblem);
 
+        // na selectie verwijzen naar verschillende problemen die bij de gekozen groep horen.
+        // maak hier een methode met een if statement.
+
+        String problem1 = "MENTHALHEALTHPROBLEMS";
+        Problem p1 = new Problem(ProblemTypes.valueOf(problem1));
+        p1.giveTheProblemType();
     }
 }
+
 
 
