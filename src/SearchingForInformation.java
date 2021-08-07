@@ -19,49 +19,44 @@ public class SearchingForInformation {
         System.out.println("Age: " + age);
         System.out.println("Postalcode: " + postalCode);
 
-        Problem dometicViolence = new Problem(ProblemTypes.PHYSICALVIOLENCE);
-        Problem childAbuse = new Problem(ProblemTypes.PHYSICALVIOLENCE);
-        Problem violence = new Problem(ProblemTypes.PHYSICALVIOLENCE);
-
-        Problem abdominalPains = new Problem(ProblemTypes.PHYSICALCOMPLAINTS);
-        Problem headache = new Problem(ProblemTypes.PHYSICALCOMPLAINTS);
-        Problem constantTiredness = new Problem(ProblemTypes.PHYSICALCOMPLAINTS);
-        Problem palpitations = new Problem(ProblemTypes.PHYSICALCOMPLAINTS);
-        Problem intestinalComplains = new Problem(ProblemTypes.PHYSICALCOMPLAINTS);
-        Problem soreMusclesAndJoints = new Problem(ProblemTypes.PHYSICALCOMPLAINTS);
-
-        Problem fear = new Problem(ProblemTypes.MENTHALHEALTHPROBLEMS);
-        Problem panic = new Problem(ProblemTypes.MENTHALHEALTHPROBLEMS);
-        Problem depression = new Problem(ProblemTypes.MENTHALHEALTHPROBLEMS);
-        Problem addiction = new Problem(ProblemTypes.MENTHALHEALTHPROBLEMS);
-        Problem burnout = new Problem(ProblemTypes.MENTHALHEALTHPROBLEMS);
-        Problem suicide = new Problem(ProblemTypes.MENTHALHEALTHPROBLEMS);
-
-        Problem selfConfidence = new Problem(ProblemTypes.EMOTIONALPROBLEMS);
-        Problem stressedOut = new Problem(ProblemTypes.EMOTIONALPROBLEMS);
-        Problem worryAbout = new Problem(ProblemTypes.EMOTIONALPROBLEMS);
-        Problem guiltyFeelings = new Problem(ProblemTypes.EMOTIONALPROBLEMS);
-        Problem loneliness = new Problem(ProblemTypes.EMOTIONALPROBLEMS);
-
         Scanner problem_type = new Scanner(System.in);
         System.out.println("Make a choice of one of the problem-groups below: ");
-        System.out.println("Emotional problems:");
-        System.out.println("Menthal health problems:");
-        System.out.println("Physical complaints:");
-        System.out.println("Physical violence:");
+        System.out.println("Choice 1: Emotional problems");
+        System.out.println("Choice 2: Menthal health problems");
+        System.out.println("Choice 3: Physical complaints");
+        System.out.println("Choice 4: Physical violence");
         System.out.print("The choice is: ");
 
-        String firstProblem = problem_type.nextLine();
-        System.out.println("The selected problem is: " + firstProblem);
+        int firstProblem = problem_type.nextInt();
 
-        // na selectie verwijzen naar verschillende problemen die bij de gekozen groep horen.
-        // maak hier een methode met een if statement.
-
-        String problem1 = "MENTHALHEALTHPROBLEMS";
-        Problem p1 = new Problem(ProblemTypes.valueOf(problem1));
-        p1.giveTheProblemType();
+        int choise = firstProblem;
+        System.out.println("The choise number is: " + choise);
+        if (choise == 4) {
+            String problem4 = "PHYSICALVIOLENCE";
+            Problem p4 = new Problem(ProblemTypes.valueOf(problem4));
+            p4.giveTheProblemType();
+        }
+        if (choise == 3) {
+            String problem3 = "PHYSICALCOMPLAINTS";
+            Problem p3 = new Problem(ProblemTypes.valueOf(problem3));
+            p3.giveTheProblemType();
+        }
+        if (choise == 2) {
+            String problem2 = "MENTHALHEALTHPROBLEMS";
+            Problem p2 = new Problem(ProblemTypes.valueOf(problem2));
+            p2.giveTheProblemType();
+        }
+        if (choise == 1) {
+            String problem1 = "EMOTIONALPROBLEMS";
+            Problem p1 = new Problem(ProblemTypes.valueOf(problem1));
+            p1.giveTheProblemType();
+        }
+        if (choise >4) {
+            System.out.println("There is not a resistant choice selected!");
+        }
     }
 }
+
 
 
 
