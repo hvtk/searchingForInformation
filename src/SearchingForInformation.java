@@ -29,29 +29,29 @@ public class SearchingForInformation {
 
         int firstProblem = problem_type.nextInt();
 
-        int choise = firstProblem;
-        System.out.println("The choise number is: " + choise);
-        if (choise == 4) {
+        int choice = firstProblem;
+        System.out.println("The choice number is: " + choice);
+        if (choice == 4) {
             String problem4 = "PHYSICALVIOLENCE";
             Problem p4 = new Problem(ProblemTypes.valueOf(problem4));
             p4.giveTheProblemType();
         }
-        if (choise == 3) {
+        if (choice == 3) {
             String problem3 = "PHYSICALCOMPLAINTS";
             Problem p3 = new Problem(ProblemTypes.valueOf(problem3));
             p3.giveTheProblemType();
         }
-        if (choise == 2) {
+        if (choice == 2) {
             String problem2 = "MENTHALHEALTHPROBLEMS";
             Problem p2 = new Problem(ProblemTypes.valueOf(problem2));
             p2.giveTheProblemType();
         }
-        if (choise == 1) {
+        if (choice == 1) {
             String problem1 = "EMOTIONALPROBLEMS";
             Problem p1 = new Problem(ProblemTypes.valueOf(problem1));
             p1.giveTheProblemType();
         }
-        if (choise >4) {
+        if (choice >4) {
             System.out.println("There is not a resistant choice selected!");
         }
     }
