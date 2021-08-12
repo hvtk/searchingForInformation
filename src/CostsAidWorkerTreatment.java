@@ -4,6 +4,7 @@ public class CostsAidWorkerTreatment {
     Boolean answerYesOrNo;
 
     public CostsAidWorkerTreatment() {
+        this.answerYesOrNo = answerYesOrNo;
     }
 
     public String getCostsAidWorkerTreatmentPart() {
@@ -22,7 +23,7 @@ public class CostsAidWorkerTreatment {
         this.answerYesOrNo = answerYesOrNo;
     }
 
-    public void healthInsurance() {
+    public void healthInsurance(Boolean answerYesOrNo) {
         if(answerYesOrNo == true) {
         System.out.println("The treatment is covered by health insurance");
         } else {
@@ -30,7 +31,7 @@ public class CostsAidWorkerTreatment {
         }
     }
 
-    public void referNecessaryFamilyDoctor(){
+    public void referNecessaryFamilyDoctor(Boolean answerYesOrNo){
         if(answerYesOrNo == true) {
             System.out.println("For the treatment is refer from the family doctor necessary, to get reimbursement of health insurance");
         } else {

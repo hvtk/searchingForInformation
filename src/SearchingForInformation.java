@@ -54,6 +54,27 @@ public class SearchingForInformation {
         if (choice >4) {
             System.out.println("There is not a resistant choice selected!");
         }
+
+        Scanner health_insurance = new Scanner(System.in);
+        System.out.println("Is there a refer from the family doctor necessary?");
+        System.out.print("Type Y (yes) or N (no): ");
+
+        String referFamilyDoctor = health_insurance.next();
+        String refer = referFamilyDoctor;
+
+        if(refer == "Y") {
+           CostsAidWorkerTreatment c1 = new CostsAidWorkerTreatment();
+           c1.setAnswerYesOrNo(true);
+           c1.referNecessaryFamilyDoctor(true);
+           c1.healthInsurance(true);
+        }
+
+        if(refer == "N") {
+            CostsAidWorkerTreatment c2 = new CostsAidWorkerTreatment();
+            c2.setAnswerYesOrNo(false);
+            c2.referNecessaryFamilyDoctor(false);
+            c2.healthInsurance(false);
+        }
     }
 }
 
