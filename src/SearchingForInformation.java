@@ -62,15 +62,15 @@ public class SearchingForInformation {
         String referFamilyDoctor = health_insurance.next();
         String refer = referFamilyDoctor;
 
-        if(refer == "Y") {
-           CostsAidWorkerTreatment c1 = new CostsAidWorkerTreatment();
-           c1.setAnswerYesOrNo(true);
-           c1.referNecessaryFamilyDoctor(true);
-           c1.healthInsurance(true);
+        if(refer.equals("Y")) {
+          CostsAidWorkerTreatment c1 = new CostsAidWorkerTreatment(true);
+          c1.setAnswerYesOrNo(true);
+          c1.referNecessaryFamilyDoctor(true);
+          c1.healthInsurance(true);
         }
 
-        if(refer == "N") {
-            CostsAidWorkerTreatment c2 = new CostsAidWorkerTreatment();
+        if(refer.equals("N")) {
+            CostsAidWorkerTreatment c2 = new CostsAidWorkerTreatment(false);
             c2.setAnswerYesOrNo(false);
             c2.referNecessaryFamilyDoctor(false);
             c2.healthInsurance(false);

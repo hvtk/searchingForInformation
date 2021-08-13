@@ -3,7 +3,7 @@ public class CostsAidWorkerTreatment {
     String costsAidWorkerTreatmentPart;
     Boolean answerYesOrNo;
 
-    public CostsAidWorkerTreatment() {
+    public CostsAidWorkerTreatment(Boolean answerYesOrNo) {
         this.answerYesOrNo = answerYesOrNo;
     }
 
