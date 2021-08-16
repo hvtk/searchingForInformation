@@ -1,9 +1,9 @@
-import java.util.Scanner;
+import java.util.ArrayList;
 
 public class Expertise {
 
     String expertiseName;
-    Boolean expertiseAvailable;
+    ArrayList<String> expertiseAvailable = new ArrayList<String>();
 
     public Expertise() {
     }
@@ -16,11 +16,11 @@ public class Expertise {
         this.expertiseName = expertiseName;
     }
 
-    public Boolean getExpertiseAvailable() {
+    public ArrayList<String> returnExpertiseAvailable() {
         return expertiseAvailable;
     }
 
-    public void setExpertiseAvailable(Boolean expertiseAvailable) {
-        this.expertiseAvailable = expertiseAvailable;
+    public void addExpertiseAvailable( int expertiseFromAidWorker) {
+        expertiseAvailable.add(expertiseFromAidWorker);
     }
 }
