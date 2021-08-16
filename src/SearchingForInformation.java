@@ -75,6 +75,21 @@ public class SearchingForInformation {
             c2.referNecessaryFamilyDoctor(false);
             c2.healthInsurance(false);
         }
+
+        Scanner expertiseNames = new Scanner(System.in);
+        System.out.println("Below are printed expertise options. Select which expertise available is.");
+        System.out.println("Choice 1: Fear knowledge");
+        System.out.println("Choice 2: Panic knowledge");
+        System.out.println("Choice 3: Depression knowledge");
+        System.out.println("Choice 4: Addiction knowledge");
+        System.out.println("Choice 5: Burnout knowledge");
+        System.out.println("Choice 6: Suicide knowledge");
+        System.out.print("The available knowledge is: ");
+        int expertise1 = expertiseNames.nextInt();
+        System.out.print("Is there another available knowledge? ");
+        // maak een list met alle geselecteerde expertise namen.
+        // Deze lijst hoort bij de gekozen aidworker of treatment, welke weer een onderdeel is van de in de arraylist genoemde aidworkers of treatments.
+        // er moet net zo lang geselecteerd kunnen worden als mogelijk. Ook moet er een opties zijn om een knowledge toe te voegen.
     }
 }
 

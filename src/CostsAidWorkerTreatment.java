@@ -1,18 +1,10 @@
 public class CostsAidWorkerTreatment {
 
-    String costsAidWorkerTreatmentPart;
-    Boolean answerYesOrNo;
+   private String costsAidWorkerTreatmentPart;
+   private Boolean answerYesOrNo;
 
     public CostsAidWorkerTreatment(Boolean answerYesOrNo) {
         this.answerYesOrNo = answerYesOrNo;
-    }
-
-    public String getCostsAidWorkerTreatmentPart() {
-        return costsAidWorkerTreatmentPart;
-    }
-
-    public void setCostsAidWorkerTreatmentPart(String costsAidWorkerTreatmentPart) {
-        this.costsAidWorkerTreatmentPart = costsAidWorkerTreatmentPart;
     }
 
     public Boolean getAnswerYesOrNo() {
@@ -22,6 +14,7 @@ public class CostsAidWorkerTreatment {
     public void setAnswerYesOrNo(Boolean answerYesOrNo) {
         this.answerYesOrNo = answerYesOrNo;
     }
+
 
     public void healthInsurance(Boolean answerYesOrNo) {
         if(answerYesOrNo == true) {
