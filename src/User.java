@@ -2,10 +2,10 @@ import java.util.ArrayList;
 
 public class User {
 
-    public String username;
-    public String password;
-    public String age;
-    public String postalCode;
+    private String username;
+    private String password;
+    private String age;
+    private String postalCode;
 
     public User() {
 

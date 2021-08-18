@@ -86,19 +86,36 @@ public class SearchingForInformation {
         System.out.println("Choice 6: Suicide knowledge");
         System.out.print("The available knowledge is: ");
 
-        Expertise allExpertisesFromAidWorker = new Expertise();
+        int expertiseNameChoice = expertiseNames.nextInt();
+        int expertiseChoice = expertiseNameChoice;
 
-        do {
-            System.out.print("The available knowledge is: ");
-            int expertiseFromAidWorker = expertiseNames.nextInt();
-            System.out.print("Is there another available knowledge? ");
-            if (expertiseFromAidWorker == -1) break;
-            allExpertisesFromAidWorker.addExpertiseAvailable(expertiseFromAidWorker);
-        } while (expertiseFromAidWorker != -1);
+        if(expertiseChoice == 1) {
+            Expertise e1 = new Expertise("Fear knowledge");
+            e1.addExpertiseAvailable();
+        }
 
+        if(expertiseChoice == 2) {
+            Expertise e2 = new Expertise("Panic knowledge");
 
+        }
 
+        if(expertiseChoice == 3) {
+            Expertise e3 = new Expertise("Depression knowledge");
+        }
 
+        if(expertiseChoice == 4) {
+            Expertise e4 = new Expertise("Addiction knowledge");
+        }
+
+        if(expertiseChoice == 5) {
+            Expertise e5 = new Expertise("Burnout knowledge");
+        }
+
+        if(expertiseChoice == 6) {
+            Expertise e6 = new Expertise("Suicide knowledge");
+        }
+
+        e1.addExpertiseAvailable();
 
 
         // maak een list met alle geselecteerde expertise namen.

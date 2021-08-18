@@ -1,7 +1,7 @@
 public class MediaOption {
 
-    String mediaOptionName;
-    Boolean mediaOptionAvailable;
+    private String mediaOptionName;
+    private Boolean mediaOptionAvailable;
 
     public MediaOption() {
     }

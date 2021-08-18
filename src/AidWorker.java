@@ -1,8 +1,10 @@
+import java.util.ArrayList;
+
 public class AidWorker {
 
-    AidWorkerTypes aidWorkerTypes;
-    String aidWorkersName;
-    String aidWorkersWebAddress;
+   AidWorkerTypes aidWorkerTypes;
+   private String aidWorkersName;
+   private String aidWorkersWebAddress;
 
     public AidWorker() {
     }

@@ -1,8 +1,8 @@
 public class MediaInformation {
 
     MediaInformationTypes mediaInformationTypes;
-    String mediaInformationName;
-    String mediaInformationFoundAt;
+    private String mediaInformationName;
+    private String mediaInformationFoundAt;
 
     public MediaInformation(){
     }

@@ -1,8 +1,8 @@
 public class Treatment {
 
     TreatmentTypes treatmentTypes;
-    String treatmentName;
-    String treatmentWebAddress;
+    private String treatmentName;
+    private String treatmentWebAddress;
 
     public Treatment() {
     }

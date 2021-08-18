@@ -2,25 +2,25 @@ import java.util.ArrayList;
 
 public class Expertise {
 
-    String expertiseName;
-    ArrayList<String> expertiseAvailable = new ArrayList<String>();
+    private int expertiseName;
+    private ArrayList<Integer> expertiseAvailable = new ArrayList<Integer>();
 
-    public Expertise() {
-    }
-
-    public String getExpertiseName() {
-        return expertiseName;
-    }
-
-    public void setExpertiseName(String expertiseName) {
+    public Expertise(int expertiseName) {
         this.expertiseName = expertiseName;
     }
 
-    public ArrayList<String> returnExpertiseAvailable() {
-        return expertiseAvailable;
+    public int getExpertiseName() {
+        return expertiseName;
     }
 
-    public void addExpertiseAvailable( int expertiseFromAidWorker) {
-        expertiseAvailable.add(expertiseFromAidWorker);
+    public void setExpertiseName(int expertiseName) {
+        this.expertiseName = expertiseName;
+    }
+
+    public ArrayList<Integer> returnExpertiseAvailable()
+    {return expertiseAvailable; }
+
+    public void addExpertiseAvailable(String aidWorkerName) {
+        expertiseAvailable.add(aidWorkerName);
     }
 }

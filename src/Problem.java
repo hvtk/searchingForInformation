@@ -1,6 +1,6 @@
 public class Problem {
-    String problemName;
-    ProblemTypes problemTypes;
+    private String problemName;
+    private ProblemTypes problemTypes;
 
     public Problem(ProblemTypes problemTypes) {
         this.problemTypes = problemTypes;

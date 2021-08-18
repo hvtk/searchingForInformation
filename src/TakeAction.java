@@ -1,8 +1,8 @@
 public class TakeAction {
 
     TakeActionTypes takeActionTypes;
-    String takeActionName;
-    String takeActionWebAddress;
+    private String takeActionName;
+    private String takeActionWebAddress;
 
     public TakeAction() {
     }

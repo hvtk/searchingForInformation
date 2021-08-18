@@ -1,7 +1,7 @@
 public class CostsAidWorkerTreatment {
 
-   private String costsAidWorkerTreatmentPart;
-   private Boolean answerYesOrNo;
+    private String costsAidWorkerTreatmentPart;
+    private Boolean answerYesOrNo;
 
     public CostsAidWorkerTreatment(Boolean answerYesOrNo) {
         this.answerYesOrNo = answerYesOrNo;
