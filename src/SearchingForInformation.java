@@ -91,31 +91,34 @@ public class SearchingForInformation {
 
         if(expertiseChoice == 1) {
             Expertise e1 = new Expertise("Fear knowledge");
-            e1.addExpertiseAvailable();
+            System.out.println("De available expertise is: " + e1);
         }
 
         if(expertiseChoice == 2) {
             Expertise e2 = new Expertise("Panic knowledge");
-
+            System.out.println("De available expertise is: " + e2);
         }
 
         if(expertiseChoice == 3) {
             Expertise e3 = new Expertise("Depression knowledge");
+            System.out.println("De available expertise is: " + e3);
         }
 
         if(expertiseChoice == 4) {
             Expertise e4 = new Expertise("Addiction knowledge");
+            System.out.println("De available expertise is: " + e4);
         }
 
         if(expertiseChoice == 5) {
             Expertise e5 = new Expertise("Burnout knowledge");
+            System.out.println("De available expertise is: " + e5);
         }
 
         if(expertiseChoice == 6) {
             Expertise e6 = new Expertise("Suicide knowledge");
+            System.out.println("De available expertise is: " + e6);
         }
 
-        e1.addExpertiseAvailable();
 
 
         // maak een list met alle geselecteerde expertise namen.
