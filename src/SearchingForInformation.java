@@ -76,6 +76,8 @@ public class SearchingForInformation {
             c2.healthInsurance(false);
         }
 
+        ArrayList<Integer> expertiseAvailable = new ArrayList<Integer>();
+
         Scanner expertiseNames = new Scanner(System.in);
         System.out.println("Below are printed expertise options. Select which expertise available is.");
         System.out.println("Choice 1: Fear knowledge");
@@ -85,42 +87,49 @@ public class SearchingForInformation {
         System.out.println("Choice 5: Burnout knowledge");
         System.out.println("Choice 6: Suicide knowledge");
         System.out.print("The available knowledge is: ");
-
         int expertiseNameChoice = expertiseNames.nextInt();
-        int expertiseChoice = expertiseNameChoice;
+        expertiseAvailable.add(expertiseNames.nextInt());
 
-        if(expertiseChoice == 1) {
-            Expertise e1 = new Expertise("Fear knowledge");
-            System.out.println("De available expertise is: " + e1);
-        }
+        Scanner anotherExpertiseAvailable = new Scanner(System.in);
+        System.out.println("Is there another knowledge available? ");
+        System.out.print("Type Y (yes) or N (no): ");
+        String anotherExpertise = anotherExpertiseAvailable.next();
+        String aE = anotherExpertise;
 
-        if(expertiseChoice == 2) {
-            Expertise e2 = new Expertise("Panic knowledge");
-            System.out.println("De available expertise is: " + e2);
-        }
+        if (aE.equals("N"));
+            System.out.println("There are no more expertise options.");
 
-        if(expertiseChoice == 3) {
-            Expertise e3 = new Expertise("Depression knowledge");
-            System.out.println("De available expertise is: " + e3);
-        }
+        if (aE.equals("Y"));
+            System.out.println("Select another expertise. ");
 
-        if(expertiseChoice == 4) {
-            Expertise e4 = new Expertise("Addiction knowledge");
-            System.out.println("De available expertise is: " + e4);
-        }
+        if (expertiseNameChoice == 1);
+        Expertise e1 = new Expertise("Fear knowledge");
+        System.out.println("De available expertise is: " + e1);
 
-        if(expertiseChoice == 5) {
-            Expertise e5 = new Expertise("Burnout knowledge");
-            System.out.println("De available expertise is: " + e5);
-        }
+        if (expertiseNameChoice == 2);
+        Expertise e2 = new Expertise("Panic knowledge");
+        System.out.println("De available expertise is: " + e2);
 
-        if(expertiseChoice == 6) {
-            Expertise e6 = new Expertise("Suicide knowledge");
-            System.out.println("De available expertise is: " + e6);
-        }
+        if (expertiseNameChoice == 3);
+        Expertise e3 = new Expertise("Depression knowledge");
+        System.out.println("De available expertise is: " + e3);
+
+        if (expertiseNameChoice == 4);
+        Expertise e4 = new Expertise("Addiction knowledge");
+        System.out.println("De available expertise is: " + e4);
+
+        if (expertiseNameChoice == 5);
+        Expertise e5 = new Expertise("Burnout knowledge");
+        System.out.println("De available expertise is: " + e5);
+
+        if (expertiseNameChoice == 6);
+        Expertise e6 = new Expertise("Suicide knowledge");
+        System.out.println("De available expertise is: " + e6);
 
 
+        AidWorker organisation1 = new AidWorker("Jan Jansen", "www.janjansen.nl");
 
+        // zorg dat de waarde in de scanner gebruikt kan worden als invulling van de arraylist voor expertiseAvailable
         // maak een list met alle geselecteerde expertise namen.
         // Deze lijst hoort bij de gekozen aidworker of treatment, welke weer een onderdeel is van de in de arraylist genoemde aidworkers of treatments.
         // er moet net zo lang geselecteerd kunnen worden als mogelijk. Ook moet er een opties zijn om een knowledge toe te voegen.
