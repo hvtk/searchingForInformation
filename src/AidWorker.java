@@ -59,7 +59,7 @@ public class AidWorker {
     @Override
     public String toString() {
         StringBuilder stringBuilder = new StringBuilder();
-        stringBuilder.append("AidWorker ").append(aidWorkersName).append("").append(aidWorkersWebAddress).append(" heeft de volgende expertises:");
+        stringBuilder.append("AidWorker ").append(aidWorkersName).append("").append("met als webadres: ").append(aidWorkersWebAddress).append(" heeft de volgende expertises:");
 
         for (Expertise inhabitant : expertiseAvailable) {
             stringBuilder.append("\n\r").append(inhabitant.toString()).append(".");
