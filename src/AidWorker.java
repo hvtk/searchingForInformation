@@ -3,6 +3,7 @@ import java.util.ArrayList;
 
 public class AidWorker {
 
+    public Object setExpertiseAvailable;
     AidWorkerTypes aidWorkerTypes;
     private String aidWorkersName;
     private String aidWorkersWebAddress;

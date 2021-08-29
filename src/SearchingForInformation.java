@@ -1,6 +1,7 @@
 import java.util.*;
 
 public class SearchingForInformation {
+
     public static void main(String[] args) {
 
         Scanner userInformation = new Scanner(System.in);    //System.in is a standard input stream
@@ -78,6 +79,7 @@ public class SearchingForInformation {
 
         ArrayList<Expertise>expertiseAvailable = new ArrayList<Expertise>();
 
+
         Scanner expertiseNames = new Scanner(System.in);
         System.out.println("Below are printed expertise options. Select which expertise available is.");
         System.out.println("Choice 1: Fear knowledge");
@@ -93,24 +95,21 @@ public class SearchingForInformation {
 
         System.out.println("The choice that is made is number: " + choiceExpertiseName);
 
-        if( choiceExpertiseName.equals("1")){
-            Expertise e1 = new Expertise("Fear knowledge");
-            e1.giveTheExpertiseNameByTheChoice();
-            expertiseAvailable.add(e1);
-        }
+        if( choiceExpertiseName.equals("1"));
+        Expertise e1 = new Expertise("Fear knowledge");
+        expertiseAvailable.add(e1);
 
 
         Scanner moreChoices = new Scanner(System.in);
         System.out.print("Is there another expertise available? Type Y (yes) or N (no): ");
         String extraChoices = moreChoices.nextLine();
-        for (int choices = 1; choices <= 6; choices++) {
+        for (int choices = 1; choices <= 5; choices++) {
             if (extraChoices.equals("Y")) {
                 System.out.print("The next choice is: ");
                 String choiceExpertiseName2 = expertiseNames.nextLine();
 
                 if( choiceExpertiseName2.equals("1")){
                     Expertise ce1 = new Expertise("Fear knowledge");
-                    ce1.giveTheExpertiseNameByTheChoice();
                     expertiseAvailable.add(ce1);
                 }
 
@@ -153,15 +152,15 @@ public class SearchingForInformation {
 
         }
 
-        String choiceExpertiseName2 = expertiseNames.nextLine();
+        //String choiceExpertiseName2 = expertiseNames.nextLine();
 
-        if( choiceExpertiseName2.equals("1")){
-            Expertise ce1 = new Expertise("");
-            ce1.giveTheExpertiseNameByTheChoice();
-            expertiseAvailable.add(ce1);
-        }
+       // if( choiceExpertiseName2.equals("1")){
+      //      Expertise ce1 = new Expertise("");
+      //      ce1.giveTheExpertiseNameByTheChoice();
+       //     expertiseAvailable.add(ce1);
+      //  }
 
-        System.out.println(expertiseAvailable.toString());
+        System.out.println(" The available expertise is: " + expertiseAvailable.toString());
 
 
 
@@ -173,9 +172,7 @@ public class SearchingForInformation {
 
 
         AidWorker organisation1 = new AidWorker("Jan Jansen ", "www.janjansen.nl");
-       // organisation1.addExpertise(e1);
-       //organisation1.addExpertise(e2);
-      //  System.out.println(organisation1.toString());
+        System.out.println(organisation1.toString());
 
         // zorg dat de waarde in de scanner gebruikt kan worden als invulling van de arraylist voor expertiseAvailable
         // maak een list met alle geselecteerde expertise namen.
