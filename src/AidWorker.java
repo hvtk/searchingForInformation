@@ -57,6 +57,10 @@ public class AidWorker {
         expertiseAvailable.add(expertise);
     }
 
+    public void showExpertiseAvailable() {
+        System.out.println("De aidworker heeft " + expertiseAvailable.size() + " soorten expertise.");
+    }
+
     @Override
     public String toString() {
         StringBuilder stringBuilder = new StringBuilder();

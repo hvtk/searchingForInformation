@@ -95,83 +95,96 @@ public class SearchingForInformation {
 
         System.out.println("The choice that is made is number: " + choiceExpertiseName);
 
-        if( choiceExpertiseName.equals("1"));
-        Expertise e1 = new Expertise("Fear knowledge");
-        expertiseAvailable.add(e1);
+        if (choiceExpertiseName.equals("1")) {
+            Expertise e1 = new Expertise(choiceExpertiseName);
+            e1.giveTheExpertiseNameByTheChoice();
+            expertiseAvailable.add(e1);
+        }
 
+        if (choiceExpertiseName.equals("2")) {
+            Expertise e2 = new Expertise(choiceExpertiseName);
+            e2.giveTheExpertiseNameByTheChoice();
+            expertiseAvailable.add(e2);
+        }
+
+        if (choiceExpertiseName.equals("3")) {
+            Expertise e3 = new Expertise(choiceExpertiseName);
+            e3.giveTheExpertiseNameByTheChoice();
+            expertiseAvailable.add(e3);
+        }
+
+        if (choiceExpertiseName.equals("4")) {
+            Expertise e4 = new Expertise(choiceExpertiseName);
+            e4.giveTheExpertiseNameByTheChoice();
+            expertiseAvailable.add(e4);
+        }
+
+        if (choiceExpertiseName.equals("5")) {
+            Expertise e5 = new Expertise(choiceExpertiseName);
+            e5.giveTheExpertiseNameByTheChoice();
+            expertiseAvailable.add(e5);
+        }
+
+        if (choiceExpertiseName.equals("6")) {
+            Expertise e6 = new Expertise(choiceExpertiseName);
+            e6.giveTheExpertiseNameByTheChoice();
+            expertiseAvailable.add(e6);
+        }
 
         Scanner moreChoices = new Scanner(System.in);
         System.out.print("Is there another expertise available? Type Y (yes) or N (no): ");
         String extraChoices = moreChoices.nextLine();
-        for (int choices = 1; choices <= 5; choices++) {
-            if (extraChoices.equals("Y")) {
-                System.out.print("The next choice is: ");
-                String choiceExpertiseName2 = expertiseNames.nextLine();
 
-                if( choiceExpertiseName2.equals("1")){
-                    Expertise ce1 = new Expertise("Fear knowledge");
-                    expertiseAvailable.add(ce1);
-                }
-
-            }
-            else {
-                System.out.println("There are no more choices!");
-            }
-
-
-           // if (choiceExpertiseName2.equals("2")) ;
-           // Expertise ce2 = new Expertise("Panic knowledge");
-           // expertiseAvailable.add(ce2);
-           // System.out.println("The expertiseName is: " + ce2);
-           // System.out.println("The values in array: expertiseAvailable are: " + expertiseAvailable);
-          //  if (choiceExpertiseName2.equals("3")) ;
-          //  Expertise ce3 = new Expertise("Depression knowledge");
-          //  expertiseAvailable.add(ce3);
-          //  System.out.println("The expertiseName is: " + ce3);
-          //  System.out.println("The values in array: expertiseAvailable are: " + expertiseAvailable);
-          //  if (choiceExpertiseName2.equals("4")) ;
-           // Expertise ce4 = new Expertise("Addiction knowledge");
-          //  expertiseAvailable.add(ce4);
-          //  System.out.println("The expertiseName is: " + ce4);
-           // System.out.println("The values in array: expertiseAvailable are: " + expertiseAvailable);
-         //   if (choiceExpertiseName2.equals("5")) ;
-          //  Expertise ce5 = new Expertise("Addiction knowledge");
-         //   expertiseAvailable.add(ce5);
-          //  System.out.println("The expertiseName is: " + ce5);
-          //  System.out.println("The values in array: expertiseAvailable are: " + expertiseAvailable);
-          //  if (choiceExpertiseName2.equals("6")) ;
-          //  Expertise ce6 = new Expertise("Burnout knowledge");
-          //  expertiseAvailable.add(ce6);
-         //   System.out.println("The expertiseName is: " + ce6);
-          //  System.out.println("The values in array: expertiseAvailable are: " + expertiseAvailable);
-         //   if (choiceExpertiseName2.equals("1")) ;
-          //  Expertise ce1 = new Expertise("Addiction knowledge");
-          //  expertiseAvailable.add(ce1);
-         //   System.out.println("The expertiseName is: " + ce1);
-          //  System.out.println("The values in array: expertiseAvailable are: " + expertiseAvailable);
-
+        if (extraChoices.equals("Y")) {
+            System.out.print("The next choice is: ");
+        }
+        else {
+            System.out.print("The are no more choices!");
         }
 
-        //String choiceExpertiseName2 = expertiseNames.nextLine();
+        String choiceExpertiseName2 = expertiseNames.nextLine();
+        String extraChoiceExpertiseName = choiceExpertiseName2;
+        System.out.println("The extra choice that is made is number: " + extraChoiceExpertiseName);
 
-       // if( choiceExpertiseName2.equals("1")){
-      //      Expertise ce1 = new Expertise("");
-      //      ce1.giveTheExpertiseNameByTheChoice();
-       //     expertiseAvailable.add(ce1);
-      //  }
+        if (extraChoiceExpertiseName.equals("1")) {
+            Expertise ce1 = new Expertise(extraChoiceExpertiseName);
+            ce1.giveTheExpertiseNameByTheChoice();
+            expertiseAvailable.add(ce1);
+        }
 
-        System.out.println(" The available expertise is: " + expertiseAvailable.toString());
+        if (extraChoiceExpertiseName.equals("2")) {
+            Expertise ce2 = new Expertise(extraChoiceExpertiseName);
+            ce2.giveTheExpertiseNameByTheChoice();
+            expertiseAvailable.add(ce2);
+        }
 
+        if (extraChoiceExpertiseName.equals("3")) {
+            Expertise ce3 = new Expertise(extraChoiceExpertiseName);
+            ce3.giveTheExpertiseNameByTheChoice();
+            expertiseAvailable.add(ce3);
+        }
 
+        if (extraChoiceExpertiseName.equals("4")) {
+            Expertise ce4 = new Expertise(extraChoiceExpertiseName);
+            ce4.giveTheExpertiseNameByTheChoice();
+            expertiseAvailable.add(ce4);
+        }
 
+        if (extraChoiceExpertiseName.equals("5")) {
+            Expertise ce5 = new Expertise(extraChoiceExpertiseName);
+            ce5.giveTheExpertiseNameByTheChoice();
+            expertiseAvailable.add(ce5);
+        }
 
+        if (extraChoiceExpertiseName.equals("6")) {
+            Expertise ce6 = new Expertise(extraChoiceExpertiseName);
+            ce6.giveTheExpertiseNameByTheChoice();
+            expertiseAvailable.add(ce6);
+        }
 
+        System.out.println("The available expertise is: " + expertiseAvailable.toString());
 
-
-
-
-
-        AidWorker organisation1 = new AidWorker("Jan Jansen ", "www.janjansen.nl");
+        AidWorker organisation1 = new AidWorker("Jan Jansen ", "www.janjansen.nl", expertiseAvailable);
         System.out.println(organisation1.toString());
 
         // zorg dat de waarde in de scanner gebruikt kan worden als invulling van de arraylist voor expertiseAvailable
