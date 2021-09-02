@@ -4,7 +4,8 @@ public class SearchingForInformation {
 
     public static void main(String[] args) {
 
-        Scanner userInformation = new Scanner(System.in);    //System.in is a standard input stream
+        //input user information
+        Scanner userInformation = new Scanner(System.in);
         System.out.print("Enter the username: ");
         String username = userInformation.nextLine();
         System.out.print("Enter the password: ");
@@ -14,12 +15,14 @@ public class SearchingForInformation {
         System.out.print("Enter your postalcode: ");
         String postalCode = userInformation.nextLine();
 
+        //an overview of the entered data
         System.out.println("The userinformation is:");
         System.out.println("Username: " + username);
         System.out.println("Password: " +  password);
         System.out.println("Age: " + age);
         System.out.println("Postalcode: " + postalCode);
 
+        //select a problem group from enum ProblemTypes
         Scanner problem_type = new Scanner(System.in);
         System.out.println("Make a choice of one of the problem-groups below: ");
         System.out.println("Choice 1: Emotional problems");
@@ -28,8 +31,8 @@ public class SearchingForInformation {
         System.out.println("Choice 4: Physical violence");
         System.out.print("The choice is: ");
 
+        //gives a overview of the different problemtypes inside a problemgroup
         int firstProblem = problem_type.nextInt();
-
         int choice = firstProblem;
         System.out.println("The choice number is: " + choice);
         if (choice == 4) {
@@ -56,38 +59,7 @@ public class SearchingForInformation {
             System.out.println("There is not a resistant choice selected!");
         }
 
-        Scanner health_insurance = new Scanner(System.in);
-        System.out.println("Is there a refer from the family doctor necessary?");
-        System.out.print("Type Y (yes) or N (no): ");
-
-        String referFamilyDoctor = health_insurance.next();
-        String refer = referFamilyDoctor;
-
-        if(refer.equals("Y")) {
-          CostsAidWorkerTreatment c1 = new CostsAidWorkerTreatment(true);
-          c1.setAnswerYesOrNo(true);
-          c1.referNecessaryFamilyDoctor(true);
-          c1.healthInsurance(true);
-        }
-
-        if(refer.equals("N")) {
-            CostsAidWorkerTreatment c2 = new CostsAidWorkerTreatment(false);
-            c2.setAnswerYesOrNo(false);
-            c2.referNecessaryFamilyDoctor(false);
-            c2.healthInsurance(false);
-        }
-
-        ArrayList<Expertise>expertiseAvailable = new ArrayList<Expertise>();
-
-
         Scanner expertiseNames = new Scanner(System.in);
-        System.out.println("Below are printed expertise options. Select which expertise available is.");
-        System.out.println("Choice 1: Fear knowledge");
-        System.out.println("Choice 2: Panic knowledge");
-        System.out.println("Choice 3: Depression knowledge");
-        System.out.println("Choice 4: Addiction knowledge");
-        System.out.println("Choice 5: Burnout knowledge");
-        System.out.println("Choice 6: Suicide knowledge");
         System.out.print("The choice is: ");
 
         String expertiseNameChoice = expertiseNames.nextLine();
@@ -95,39 +67,42 @@ public class SearchingForInformation {
 
         System.out.println("The choice that is made is number: " + choiceExpertiseName);
 
+        //to make a arraylist from available expertise per aidworker
+        ArrayList<Expertise>expertiseAvailable = new ArrayList<Expertise>();
+
         if (choiceExpertiseName.equals("1")) {
             Expertise e1 = new Expertise(choiceExpertiseName);
-            e1.giveTheExpertiseNameByTheChoice();
+            e1.giveTheExpertiseNameByTheChoiceFromMentalHealthProblems();
             expertiseAvailable.add(e1);
         }
 
         if (choiceExpertiseName.equals("2")) {
             Expertise e2 = new Expertise(choiceExpertiseName);
-            e2.giveTheExpertiseNameByTheChoice();
+            e2.giveTheExpertiseNameByTheChoiceFromMentalHealthProblems();
             expertiseAvailable.add(e2);
         }
 
         if (choiceExpertiseName.equals("3")) {
             Expertise e3 = new Expertise(choiceExpertiseName);
-            e3.giveTheExpertiseNameByTheChoice();
+            e3.giveTheExpertiseNameByTheChoiceFromMentalHealthProblems();
             expertiseAvailable.add(e3);
         }
 
         if (choiceExpertiseName.equals("4")) {
             Expertise e4 = new Expertise(choiceExpertiseName);
-            e4.giveTheExpertiseNameByTheChoice();
+            e4.giveTheExpertiseNameByTheChoiceFromMentalHealthProblems();
             expertiseAvailable.add(e4);
         }
 
         if (choiceExpertiseName.equals("5")) {
             Expertise e5 = new Expertise(choiceExpertiseName);
-            e5.giveTheExpertiseNameByTheChoice();
+            e5.giveTheExpertiseNameByTheChoiceFromMentalHealthProblems();
             expertiseAvailable.add(e5);
         }
 
         if (choiceExpertiseName.equals("6")) {
             Expertise e6 = new Expertise(choiceExpertiseName);
-            e6.giveTheExpertiseNameByTheChoice();
+            e6.giveTheExpertiseNameByTheChoiceFromMentalHealthProblems();
             expertiseAvailable.add(e6);
         }
 
@@ -148,42 +123,65 @@ public class SearchingForInformation {
 
         if (extraChoiceExpertiseName.equals("1")) {
             Expertise ce1 = new Expertise(extraChoiceExpertiseName);
-            ce1.giveTheExpertiseNameByTheChoice();
+            ce1.giveTheExpertiseNameByTheChoiceFromMentalHealthProblems();
             expertiseAvailable.add(ce1);
         }
 
         if (extraChoiceExpertiseName.equals("2")) {
             Expertise ce2 = new Expertise(extraChoiceExpertiseName);
-            ce2.giveTheExpertiseNameByTheChoice();
+            ce2.giveTheExpertiseNameByTheChoiceFromMentalHealthProblems();
             expertiseAvailable.add(ce2);
         }
 
         if (extraChoiceExpertiseName.equals("3")) {
             Expertise ce3 = new Expertise(extraChoiceExpertiseName);
-            ce3.giveTheExpertiseNameByTheChoice();
+            ce3.giveTheExpertiseNameByTheChoiceFromMentalHealthProblems();
             expertiseAvailable.add(ce3);
         }
 
         if (extraChoiceExpertiseName.equals("4")) {
             Expertise ce4 = new Expertise(extraChoiceExpertiseName);
-            ce4.giveTheExpertiseNameByTheChoice();
+            ce4.giveTheExpertiseNameByTheChoiceFromMentalHealthProblems();
             expertiseAvailable.add(ce4);
         }
 
         if (extraChoiceExpertiseName.equals("5")) {
             Expertise ce5 = new Expertise(extraChoiceExpertiseName);
-            ce5.giveTheExpertiseNameByTheChoice();
+            ce5.giveTheExpertiseNameByTheChoiceFromMentalHealthProblems();
             expertiseAvailable.add(ce5);
         }
 
         if (extraChoiceExpertiseName.equals("6")) {
             Expertise ce6 = new Expertise(extraChoiceExpertiseName);
-            ce6.giveTheExpertiseNameByTheChoice();
+            ce6.giveTheExpertiseNameByTheChoiceFromMentalHealthProblems();
             expertiseAvailable.add(ce6);
+        }
+
+        //indicate if the refer from the family doctor is necessary for health insurance
+        Scanner health_insurance = new Scanner(System.in);
+        System.out.println("Is there a refer from the family doctor necessary?");
+        System.out.print("Type Y (yes) or N (no): ");
+
+        String referFamilyDoctor = health_insurance.next();
+        String refer = referFamilyDoctor;
+
+        if(refer.equals("Y")) {
+            CostsAidWorkerTreatment c1 = new CostsAidWorkerTreatment(true);
+            c1.setAnswerYesOrNo(true);
+            c1.referNecessaryFamilyDoctor(true);
+            c1.healthInsurance(true);
+        }
+
+        if(refer.equals("N")) {
+            CostsAidWorkerTreatment c2 = new CostsAidWorkerTreatment(false);
+            c2.setAnswerYesOrNo(false);
+            c2.referNecessaryFamilyDoctor(false);
+            c2.healthInsurance(false);
         }
 
         System.out.println("The available expertise is: " + expertiseAvailable.toString());
 
+        //make a new aidworker. There will be come an input option later.
         AidWorker organisation1 = new AidWorker("Jan Jansen ", "www.janjansen.nl", expertiseAvailable);
         System.out.println(organisation1.toString());
 
@@ -192,9 +190,6 @@ public class SearchingForInformation {
         // Deze lijst hoort bij de gekozen aidworker of treatment, welke weer een onderdeel is van de in de arraylist genoemde aidworkers of treatments.
         // er moet net zo lang geselecteerd kunnen worden als mogelijk. Ook moet er een opties zijn om een knowledge toe te voegen.
     }
-
-
-
 }
 
 

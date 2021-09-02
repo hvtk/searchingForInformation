@@ -6,6 +6,7 @@ public class Problem {
         this.problemTypes = problemTypes;
     }
 
+    //to give a overview from the existing problemtypes after selection from a problemgroup in SearchingForInformation
     public void giveTheProblemType() {
        switch (problemTypes) {
            case PHYSICALVIOLENCE:

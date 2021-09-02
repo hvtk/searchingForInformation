@@ -14,26 +14,111 @@ public class Expertise {
         this.expertiseName = expertiseName;
     }
 
-    public void giveTheExpertiseNameByTheChoice() {
+    public void giveTheExpertiseNameByTheChoiceFromMentalHealthProblems() {
         switch (expertiseName) {
             case "1":
                 setExpertiseName("Fear knowledge");
                 System.out.println("De aanwezige expertise is " + getExpertiseName() );
                 break;
             case "2":
-                expertiseName = "Panic knowledge";
+                setExpertiseName("Panic knowledge");
+                System.out.println("De aanwezige expertise is " + getExpertiseName() );
                 break;
             case "3":
-                expertiseName = "Depression knowledge";
+                setExpertiseName("Depression knowledge");
+                System.out.println("De aanwezige expertise is " + getExpertiseName() );
                 break;
             case "4":
-                expertiseName = "Addiction knowledge";
+                setExpertiseName("Addiction knowledge");
+                System.out.println("De aanwezige expertise is " + getExpertiseName() );
                 break;
             case "5":
-                expertiseName = "Burnout knowledge";
+                setExpertiseName("Burnout knowledge");
+                System.out.println("De aanwezige expertise is " + getExpertiseName() );
                 break;
             case "6":
-                expertiseName = "Suicide knowledge";
+                setExpertiseName("Suicide knowledge");
+                System.out.println("De aanwezige expertise is " + getExpertiseName() );
+                break;
+            default:
+                expertiseName = "No choice has been made.";
+        }
+        System.out.println("The selected expertise is: " + expertiseName);
+    }
+
+    public void giveTheExpertiseNameByTheChoiceFromPhysicalViolence() {
+        switch (expertiseName) {
+            case "1":
+                setExpertiseName("Dometic violence");
+                System.out.println("De aanwezige expertise is " + getExpertiseName() );
+                break;
+            case "2":
+                setExpertiseName("Child abuse");
+                System.out.println("De aanwezige expertise is " + getExpertiseName() );
+                break;
+            case "3":
+                setExpertiseName("Violence");
+                System.out.println("De aanwezige expertise is " + getExpertiseName() );
+                break;
+            default:
+                expertiseName = "No choice has been made.";
+        }
+        System.out.println("The selected expertise is: " + expertiseName);
+    }
+
+    public void giveTheExpertiseNameByTheChoiceFromPhysicalComplaints() {
+        switch (expertiseName) {
+            case "1":
+                setExpertiseName("Abdominal pains");
+                System.out.println("De aanwezige expertise is " + getExpertiseName() );
+                break;
+            case "2":
+                setExpertiseName("Headache");
+                System.out.println("De aanwezige expertise is " + getExpertiseName() );
+                break;
+            case "3":
+                setExpertiseName("Constant tiredness");
+                System.out.println("De aanwezige expertise is " + getExpertiseName() );
+                break;
+            case "4":
+                setExpertiseName("Palpitations");
+                System.out.println("De aanwezige expertise is " + getExpertiseName() );
+                break;
+            case "5":
+                setExpertiseName("Intestinal complains");
+                System.out.println("De aanwezige expertise is " + getExpertiseName() );
+                break;
+            case "6":
+                setExpertiseName("Sore muscles and joints");
+                System.out.println("De aanwezige expertise is " + getExpertiseName() );
+                break;
+            default:
+                expertiseName = "No choice has been made.";
+        }
+        System.out.println("The selected expertise is: " + expertiseName);
+    }
+
+    public void giveTheExpertiseNameByTheChoiceFromEmotionalProblems() {
+        switch (expertiseName) {
+            case "1":
+                setExpertiseName("Self confidence");
+                System.out.println("De aanwezige expertise is " + getExpertiseName() );
+                break;
+            case "2":
+                setExpertiseName("Stressed out");
+                System.out.println("De aanwezige expertise is " + getExpertiseName() );
+                break;
+            case "3":
+                setExpertiseName("Worry about");
+                System.out.println("De aanwezige expertise is " + getExpertiseName() );
+                break;
+            case "4":
+                setExpertiseName("Guilty feelings");
+                System.out.println("De aanwezige expertise is " + getExpertiseName() );
+                break;
+            case "5":
+                setExpertiseName("Loneliness");
+                System.out.println("De aanwezige expertise is " + getExpertiseName() );
                 break;
             default:
                 expertiseName = "No choice has been made.";
