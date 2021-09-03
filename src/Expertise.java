@@ -1,9 +1,14 @@
 public class Expertise {
 
     private String expertiseName;
+    private ExpertiseOptionsByGroup expertiseOptionsByGroup;
 
     public Expertise(String expertiseName) {
         this.expertiseName = expertiseName;
+    }
+
+    public Expertise(ExpertiseOptionsByGroup expertiseOptionsByGroup) {
+        this.expertiseOptionsByGroup = expertiseOptionsByGroup;
     }
 
     public String getExpertiseName() {
@@ -12,6 +17,38 @@ public class Expertise {
 
     public void setExpertiseName(String expertiseName) {
         this.expertiseName = expertiseName;
+    }
+
+    public ExpertiseOptionsByGroup getExpertiseOptionsByGroup() {
+        return expertiseOptionsByGroup;
+    }
+
+    public void setExpertiseOptionsByGroup(ExpertiseOptionsByGroup expertiseOptionsByGroup) {
+        this.expertiseOptionsByGroup = expertiseOptionsByGroup;
+    }
+
+    public void giveTheExpertiseByGroup() {
+        switch(expertiseOptionsByGroup) {
+            case EMOTIONALPROBLEMS:
+                Expertise eg1 = new Expertise("");
+                eg1.giveTheExpertiseNameByTheChoiceFromEmotionalProblems();
+                break;
+            case MENTHALHEALTHPROBLEMS:
+                Expertise eg2 = new Expertise("");
+                eg2.giveTheExpertiseNameByTheChoiceFromMentalHealthProblems();
+                break;
+            case PHYSICALCOMPLAINTS:
+                Expertise eg3 = new Expertise("");
+                eg3.giveTheExpertiseNameByTheChoiceFromPhysicalComplaints();
+                break;
+            case PHYSICALVIOLENCE:
+                Expertise eg4 = new Expertise("");
+                eg4.giveTheExpertiseNameByTheChoiceFromPhysicalViolence();
+                break;
+            default:
+                expertiseName = "No choice has been made.";
+        }
+
     }
 
     public void giveTheExpertiseNameByTheChoiceFromMentalHealthProblems() {

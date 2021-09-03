@@ -72,7 +72,6 @@ public class SearchingForInformation {
 
         if (choiceExpertiseName.equals("1")) {
             Expertise e1 = new Expertise(choiceExpertiseName);
-            e1.giveTheExpertiseNameByTheChoiceFromMentalHealthProblems();
             expertiseAvailable.add(e1);
         }
 

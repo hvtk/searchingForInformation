@@ -1,0 +1,7 @@
+public enum ExpertiseOptionsByGroup {
+
+    PHYSICALVIOLENCE,
+    EMOTIONALPROBLEMS,
+    MENTHALHEALTHPROBLEMS,
+    PHYSICALCOMPLAINTS,
+}
