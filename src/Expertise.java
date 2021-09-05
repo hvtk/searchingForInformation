@@ -1,14 +1,10 @@
 public class Expertise {
 
     private String expertiseName;
-    private ExpertiseOptionsByGroup expertiseOptionsByGroup;
+    private ProblemExpertiseTypes problemExpertiseTypes;
 
     public Expertise(String expertiseName) {
         this.expertiseName = expertiseName;
-    }
-
-    public Expertise(ExpertiseOptionsByGroup expertiseOptionsByGroup) {
-        this.expertiseOptionsByGroup = expertiseOptionsByGroup;
     }
 
     public String getExpertiseName() {
@@ -19,16 +15,16 @@ public class Expertise {
         this.expertiseName = expertiseName;
     }
 
-    public ExpertiseOptionsByGroup getExpertiseOptionsByGroup() {
-        return expertiseOptionsByGroup;
+    public ProblemExpertiseTypes getProblemExpertiseTypes() {
+        return problemExpertiseTypes;
     }
 
-    public void setExpertiseOptionsByGroup(ExpertiseOptionsByGroup expertiseOptionsByGroup) {
-        this.expertiseOptionsByGroup = expertiseOptionsByGroup;
+    public void setProblemExpertiseTypes(ProblemExpertiseTypes problemExpertiseTypes) {
+        this.problemExpertiseTypes = problemExpertiseTypes;
     }
 
     public void giveTheExpertiseByGroup() {
-        switch(expertiseOptionsByGroup) {
+        switch(problemExpertiseTypes) {
             case EMOTIONALPROBLEMS:
                 Expertise eg1 = new Expertise("");
                 eg1.giveTheExpertiseNameByTheChoiceFromEmotionalProblems();

@@ -1,4 +1,4 @@
-public enum ExpertiseOptionsByGroup {
+public enum ProblemExpertiseTypes {
 
     PHYSICALVIOLENCE,
     EMOTIONALPROBLEMS,
