@@ -26,9 +26,8 @@ public class Problem {
     public void giveTheProblemType() {
        switch (problemExpertiseTypes) {
            case PHYSICALVIOLENCE:
-               Expertise eg1 = new Expertise("");
                System.out.println("The problemtype is Physicalviolence");
-               System.out.println("Choose one of the options below:");
+               System.out.println("This problemtype consists the following expertise:");
                System.out.println("Choice 1: dometic violence");
                System.out.println("Choice 2: child abuse");
                System.out.println("Choice 3: violence");
@@ -36,7 +35,7 @@ public class Problem {
 
            case EMOTIONALPROBLEMS:
                System.out.println("The problemtype is emotionalproblems");
-               System.out.println("Choose one of the options below:");
+               System.out.println("This problemtype consists the following expertise:");
                System.out.println("Choice 1: self confidence");
                System.out.println("Choice 2: stressed out");
                System.out.println("Choice 3: worry about");
@@ -46,7 +45,7 @@ public class Problem {
 
            case PHYSICALCOMPLAINTS:
                System.out.println("The problemtype is physicalcomplaints");
-               System.out.println("Choose one of the options below:");
+               System.out.println("This problemtype consists the following expertise:");
                System.out.println("Choice 1: abdominalPains");
                System.out.println("Choice 2: headache");
                System.out.println("Choice 3: constant tiredness");
@@ -57,7 +56,7 @@ public class Problem {
 
            case MENTHALHEALTHPROBLEMS:
                System.out.println("The problemtype is menthalhealthproblems");
-               System.out.println("Choose one of the options below:");
+               System.out.println("This problemtype consists the following expertise:");
                System.out.println("Choice 1: fear");
                System.out.println("Choice 2: panic");
                System.out.println("Choice 3: depression");

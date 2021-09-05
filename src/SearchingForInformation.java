@@ -59,6 +59,21 @@ public class SearchingForInformation {
             System.out.println("There is not a resistant choice selected!");
         }
 
+        //input aidworker information
+        Scanner aidWorkerInformation = new Scanner(System.in);
+        System.out.print("Enter the aidworkersname: ");
+        String aidWorkersName = aidWorkerInformation.nextLine();
+        System.out.print("Enter the aidworkerswebaddress: ");
+        String aidWorkersWebAddress = userInformation.nextLine();
+
+        //select a aidworker group from enum AidWorkerTypes
+        Scanner aidWorker_group = new Scanner(System.in);
+        System.out.println("Make a choice of one of the aidworker-groups below: ");
+        System.out.println("Choice 1: Institution");
+        System.out.println("Choice 2: Organisation");
+        System.out.println("Choice 3: Specialist");
+        System.out.print("The choice is: ");
+
         Scanner expertiseNames = new Scanner(System.in);
         System.out.print("The choice is: ");
 
