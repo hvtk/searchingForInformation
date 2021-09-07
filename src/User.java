@@ -7,9 +7,18 @@ public class User {
     private String age;
     private String postalCode;
 
-    public User() {
-
+    public User(String username, String password, String age, String postalCode) {
+        this.username = username;
+        this.password = password;
+        this.age = age;
+        this.postalCode = postalCode;
     }
+
+    public User(String age, String postalCode) {
+        this.age = age;
+        this.postalCode = postalCode;
+    }
+
 
     public String getUsername() {
         return username;

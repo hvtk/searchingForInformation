@@ -62,9 +62,13 @@ public class SearchingForInformation {
         //input aidworker information
         Scanner aidWorkerInformation = new Scanner(System.in);
         System.out.print("Enter the aidworkersname: ");
-        String aidWorkersName = aidWorkerInformation.nextLine();
+        String aidWorkerName = aidWorkerInformation.nextLine();
+        String aidWorkerName1 = aidWorkerName;
         System.out.print("Enter the aidworkerswebaddress: ");
-        String aidWorkersWebAddress = userInformation.nextLine();
+        String aidWorkerWebAddress = userInformation.nextLine();
+        String aidWorkerWebAddress1 = aidWorkerWebAddress;
+        System.out.println("De aidworker heet: " + aidWorkerName1 + " en heeft als webadres: " + aidWorkerWebAddress1);
+        AidWorker a1 = new AidWorker(aidWorkerName, aidWorkerWebAddress);
 
         //select a aidworker group from enum AidWorkerTypes
         Scanner aidWorker_group = new Scanner(System.in);
@@ -196,7 +200,7 @@ public class SearchingForInformation {
         System.out.println("The available expertise is: " + expertiseAvailable.toString());
 
         //make a new aidworker. There will be come an input option later.
-        AidWorker organisation1 = new AidWorker("Jan Jansen ", "www.janjansen.nl", expertiseAvailable);
+        AidWorker organisation1 = new AidWorker(aidWorkerName1, aidWorkerWebAddress1, expertiseAvailable);
         System.out.println(organisation1.toString());
 
         // zorg dat de waarde in de scanner gebruikt kan worden als invulling van de arraylist voor expertiseAvailable
