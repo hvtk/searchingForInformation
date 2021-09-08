@@ -4,7 +4,7 @@ import java.util.ArrayList;
 public class AidWorker {
 
     public Object setExpertiseAvailable;
-    AidWorkerTypes aidWorkerTypes;
+    private AidWorkerTypes aidWorkerTypes;
     private String aidWorkersName;
     private String aidWorkersWebAddress;
     private ArrayList<Expertise> expertiseAvailable;
@@ -19,6 +19,10 @@ public class AidWorker {
         this.aidWorkersName = aidWorkersName;
         this.aidWorkersWebAddress = aidWorkersWebAddress;
         expertiseAvailable = new ArrayList<Expertise>();
+    }
+
+    public AidWorker(AidWorkerTypes aidWorkerTypes) {
+        this.aidWorkerTypes = aidWorkerTypes;
     }
 
     public AidWorkerTypes getAidWorkerTypes() {
@@ -61,7 +65,14 @@ public class AidWorker {
         System.out.println("De aidworker heeft " + expertiseAvailable.size() + " soorten expertise.");
     }
 
-    @Override
+    public void giveTheAidWorkerType() {
+        switch (aidWorkerTypes) {
+            case INSTITUTION:
+                System.out.println("De gekozen aidworkergroup is: INSTITUTION
+                break;
+
+
+            @Override
     public String toString() {
         StringBuilder stringBuilder = new StringBuilder();
         stringBuilder.append("AidWorker ").append(aidWorkersName).append("").append("met als webadres: ").append(aidWorkersWebAddress).append(" heeft de volgende expertises:");

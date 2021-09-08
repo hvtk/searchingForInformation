@@ -14,6 +14,7 @@ public class SearchingForInformation {
         String age = userInformation.nextLine();
         System.out.print("Enter your postalcode: ");
         String postalCode = userInformation.nextLine();
+        User user1 = new User(username, password, age, postalCode);
 
         //an overview of the entered data
         System.out.println("The userinformation is:");
@@ -35,27 +36,56 @@ public class SearchingForInformation {
         int firstProblem = problem_type.nextInt();
         int choice = firstProblem;
         System.out.println("The choice number is: " + choice);
-        if (choice == 4) {
-            String problem4 = "PHYSICALVIOLENCE";
-            Problem p4 = new Problem(ProblemExpertiseTypes.valueOf(problem4));
-            p4.giveTheProblemType();
-        }
-        if (choice == 3) {
-            String problem3 = "PHYSICALCOMPLAINTS";
-            Problem p3 = new Problem(ProblemExpertiseTypes.valueOf(problem3));
-            p3.giveTheProblemType();
+        if (choice == 1) {
+            String problem1 = "EMOTIONALPROBLEMS";
+            Problem p1 = new Problem(ProblemExpertiseTypes.valueOf(problem1));
+            p1.giveTheProblemType();
         }
         if (choice == 2) {
             String problem2 = "MENTHALHEALTHPROBLEMS";
             Problem p2 = new Problem(ProblemExpertiseTypes.valueOf(problem2));
             p2.giveTheProblemType();
         }
-        if (choice == 1) {
-            String problem1 = "EMOTIONALPROBLEMS";
-            Problem p1 = new Problem(ProblemExpertiseTypes.valueOf(problem1));
-            p1.giveTheProblemType();
+        if (choice == 3) {
+            String problem3 = "PHYSICALCOMPLAINTS";
+            Problem p3 = new Problem(ProblemExpertiseTypes.valueOf(problem3));
+            p3.giveTheProblemType();
+        }
+        if (choice == 4) {
+            String problem4 = "PHYSICALVIOLENCE";
+            Problem p4 = new Problem(ProblemExpertiseTypes.valueOf(problem4));
+            p4.giveTheProblemType();
         }
         if (choice >4) {
+            System.out.println("There is not a resistant choice selected!");
+        }
+
+        //select a aidworker group from enum AidWorkerTypes
+        Scanner aidWorker_group = new Scanner(System.in);
+        System.out.println("Make a choice of one of the aidworker-groups below: ");
+        System.out.println("Choice 1: Institution");
+        System.out.println("Choice 2: Organisation");
+        System.out.println("Choice 3: Specialist");
+        System.out.print("The choice is: ");
+        int choiceAidWorkerGroup = aidWorker_group.nextInt();
+        int choiceAG = choiceAidWorkerGroup;
+        System.out.println("The choice number is: " + choiceAG);
+        if (choiceAG == 1) {
+            String aidWorkerType1 = "INSTITUTION";
+            AidWorker at1 = new AidWorker(AidWorkerTypes.valueOf(aidWorkerType1));
+            System.out.println("De gekozen aidworkergroup is: " + at1);
+        }
+        if (choiceAG == 2) {
+            String aidWorkerType2 = "ORGANISATION";
+            AidWorker at2 = new AidWorker(AidWorkerTypes.valueOf(aidWorkerType2));
+            System.out.println("De gekozen aidworkergroup is: " + at2);
+        }
+        if (choiceAG == 3) {
+            String aidWorkerType3 = "SPECIALIST";
+            AidWorker at3 = new AidWorker(AidWorkerTypes.valueOf(aidWorkerType3));
+            System.out.println("De gekozen aidworkergroup is: " + at3);
+        }
+        if (choiceAG >3) {
             System.out.println("There is not a resistant choice selected!");
         }
 
@@ -69,14 +99,6 @@ public class SearchingForInformation {
         String aidWorkerWebAddress1 = aidWorkerWebAddress;
         System.out.println("De aidworker heet: " + aidWorkerName1 + " en heeft als webadres: " + aidWorkerWebAddress1);
         AidWorker a1 = new AidWorker(aidWorkerName, aidWorkerWebAddress);
-
-        //select a aidworker group from enum AidWorkerTypes
-        Scanner aidWorker_group = new Scanner(System.in);
-        System.out.println("Make a choice of one of the aidworker-groups below: ");
-        System.out.println("Choice 1: Institution");
-        System.out.println("Choice 2: Organisation");
-        System.out.println("Choice 3: Specialist");
-        System.out.print("The choice is: ");
 
         Scanner expertiseNames = new Scanner(System.in);
         System.out.print("The choice is: ");
