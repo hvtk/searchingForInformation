@@ -68,11 +68,18 @@ public class AidWorker {
     public void giveTheAidWorkerType() {
         switch (aidWorkerTypes) {
             case INSTITUTION:
-                System.out.println("De gekozen aidworkergroup is: INSTITUTION
+                System.out.println("De gekozen aidworkergroup is: INSTITUTION");
                 break;
+            case ORGANISATION:
+                System.out.println("De gekozen aidworkergroup is: ORGANISATION");
+                break;
+            case SPECIALIST:
+                System.out.println("De gekozen aidworkergroup is: SPECIALIST");
+                break;
+        }
+    }
 
-
-            @Override
+    @Override
     public String toString() {
         StringBuilder stringBuilder = new StringBuilder();
         stringBuilder.append("AidWorker ").append(aidWorkersName).append("").append("met als webadres: ").append(aidWorkersWebAddress).append(" heeft de volgende expertises:");

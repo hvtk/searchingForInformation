@@ -73,17 +73,17 @@ public class SearchingForInformation {
         if (choiceAG == 1) {
             String aidWorkerType1 = "INSTITUTION";
             AidWorker at1 = new AidWorker(AidWorkerTypes.valueOf(aidWorkerType1));
-            System.out.println("De gekozen aidworkergroup is: " + at1);
+            at1.giveTheAidWorkerType();
         }
         if (choiceAG == 2) {
             String aidWorkerType2 = "ORGANISATION";
             AidWorker at2 = new AidWorker(AidWorkerTypes.valueOf(aidWorkerType2));
-            System.out.println("De gekozen aidworkergroup is: " + at2);
+            at2.giveTheAidWorkerType();
         }
         if (choiceAG == 3) {
             String aidWorkerType3 = "SPECIALIST";
             AidWorker at3 = new AidWorker(AidWorkerTypes.valueOf(aidWorkerType3));
-            System.out.println("De gekozen aidworkergroup is: " + at3);
+            at3.giveTheAidWorkerType();
         }
         if (choiceAG >3) {
             System.out.println("There is not a resistant choice selected!");
@@ -224,6 +224,8 @@ public class SearchingForInformation {
         //make a new aidworker. There will be come an input option later.
         AidWorker organisation1 = new AidWorker(aidWorkerName1, aidWorkerWebAddress1, expertiseAvailable);
         System.out.println(organisation1.toString());
+        System.out.println("De aidworker-group is: " + choiceAG);
+        System.out.println("Is er een verwijs van de huisarts nodig bij de gekozen expertise: " + refer);
 
         // zorg dat de waarde in de scanner gebruikt kan worden als invulling van de arraylist voor expertiseAvailable
         // maak een list met alle geselecteerde expertise namen.
