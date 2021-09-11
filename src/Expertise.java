@@ -3,7 +3,7 @@ public class Expertise {
    // private String expertiseName;
     private ExpertiseTypes expertiseTypes;
 
-    public Expertise(ProblemTypes problemTypes) {
+    public Expertise(ExpertProblemTypes problemTypes) {
         this.problemTypes = problemTypes;
     }
 
