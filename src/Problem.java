@@ -1,9 +1,9 @@
 public class Problem {
     private String problemName;
-    private ProblemExpertiseTypes problemExpertiseTypes;
+    private ProblemTypes problemTypes;
 
-    public Problem(ProblemExpertiseTypes problemExpertiseTypes) {
-        this.problemExpertiseTypes = problemExpertiseTypes;
+    public Problem(ProblemTypes problemTypes) {
+        this.problemTypes = problemTypes;
     }
 
     public String getProblemName() {
@@ -14,17 +14,17 @@ public class Problem {
         this.problemName = problemName;
     }
 
-    public ProblemExpertiseTypes getProblemExpertiseTypes() {
-        return problemExpertiseTypes;
+    public ProblemTypes getProblemExpertiseTypes() {
+        return problemTypes;
     }
 
-    public void setProblemExpertiseTypes(ProblemExpertiseTypes problemExpertiseTypes) {
-        this.problemExpertiseTypes = problemExpertiseTypes;
+    public void setProblemExpertiseTypes(ProblemTypes problemTypes) {
+        this.problemTypes = problemTypes;
     }
 
     //to give a overview from the existing problemtypes after selection from a problemgroup in SearchingForInformation
     public void giveTheProblemType() {
-       switch (problemExpertiseTypes) {
+       switch (problemTypes) {
            case PHYSICALVIOLENCE:
                System.out.println("The problemtype is Physicalviolence");
                System.out.println("This problemtype consists the following expertise:");

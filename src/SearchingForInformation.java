@@ -38,22 +38,22 @@ public class SearchingForInformation {
         System.out.println("The choice number is: " + choice);
         if (choice == 1) {
             String problem1 = "EMOTIONALPROBLEMS";
-            Problem p1 = new Problem(ProblemExpertiseTypes.valueOf(problem1));
-            p1.giveTheProblemType();
+            Problem p1 = new Problem(ProblemTypes.valueOf(problem1));
+            ProblemTypes.EMOTIONALPROBLEMS.emotionalProblems();
         }
         if (choice == 2) {
             String problem2 = "MENTHALHEALTHPROBLEMS";
-            Problem p2 = new Problem(ProblemExpertiseTypes.valueOf(problem2));
+            Problem p2 = new Problem(ProblemTypes.valueOf(problem2));
             p2.giveTheProblemType();
         }
         if (choice == 3) {
             String problem3 = "PHYSICALCOMPLAINTS";
-            Problem p3 = new Problem(ProblemExpertiseTypes.valueOf(problem3));
+            Problem p3 = new Problem(ProblemTypes.valueOf(problem3));
             p3.giveTheProblemType();
         }
         if (choice == 4) {
             String problem4 = "PHYSICALVIOLENCE";
-            Problem p4 = new Problem(ProblemExpertiseTypes.valueOf(problem4));
+            Problem p4 = new Problem(ProblemTypes.valueOf(problem4));
             p4.giveTheProblemType();
         }
         if (choice >4) {
@@ -226,6 +226,7 @@ public class SearchingForInformation {
         System.out.println(organisation1.toString());
         System.out.println("De aidworker-group is: " + choiceAG);
         System.out.println("Is er een verwijs van de huisarts nodig bij de gekozen expertise: " + refer);
+        System.out.println("De nieuwe user heet: " + username + " Het gekozen wachtwoord is: " + password + " De leeftijd is: " + " jaar" + " En de postcode is: " + postalCode );
 
         // zorg dat de waarde in de scanner gebruikt kan worden als invulling van de arraylist voor expertiseAvailable
         // maak een list met alle geselecteerde expertise namen.

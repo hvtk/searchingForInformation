@@ -1,7 +1,0 @@
-public enum ProblemExpertiseTypes {
-
-    PHYSICALVIOLENCE,
-    EMOTIONALPROBLEMS,
-    MENTHALHEALTHPROBLEMS,
-    PHYSICALCOMPLAINTS,
-}
