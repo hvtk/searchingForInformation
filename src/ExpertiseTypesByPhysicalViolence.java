@@ -1,6 +1,6 @@
 public class ExpertiseTypesByPhysicalViolence {
 
-    public void giveTheExpertiseNameByTheChoiceFromPhysicalViolence() {
+    {/*}  public void giveTheExpertiseNameByTheChoiceFromPhysicalViolence() {
         switch (expertiseName) {
             case "1":
                 setExpertiseName("Dometic violence");
@@ -18,5 +18,5 @@ public class ExpertiseTypesByPhysicalViolence {
                 expertiseName = "No choice has been made.";
         }
         System.out.println("The selected expertise is: " + expertiseName);
-    }
+    }*/}
 }

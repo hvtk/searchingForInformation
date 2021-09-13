@@ -39,22 +39,22 @@ public class SearchingForInformation {
         if (choice == 1) {
             String problem1 = "EMOTIONALPROBLEMS";
             Problem p1 = new Problem(ProblemTypes.valueOf(problem1));
-            ProblemTypes.EMOTIONALPROBLEMS.emotionalProblems();
+            ProblemTypes.emotionalProblems();
         }
         if (choice == 2) {
             String problem2 = "MENTHALHEALTHPROBLEMS";
             Problem p2 = new Problem(ProblemTypes.valueOf(problem2));
-            p2.giveTheProblemType();
+            ProblemTypes.menthalHealthProblems();
         }
         if (choice == 3) {
             String problem3 = "PHYSICALCOMPLAINTS";
             Problem p3 = new Problem(ProblemTypes.valueOf(problem3));
-            p3.giveTheProblemType();
+            ProblemTypes.physicalComplaints();
         }
         if (choice == 4) {
             String problem4 = "PHYSICALVIOLENCE";
             Problem p4 = new Problem(ProblemTypes.valueOf(problem4));
-            p4.giveTheProblemType();
+            ProblemTypes.physicalViolence();
         }
         if (choice >4) {
             System.out.println("There is not a resistant choice selected!");
@@ -111,7 +111,7 @@ public class SearchingForInformation {
         //to make a arraylist from available expertise per aidworker
         ArrayList<Expertise>expertiseAvailable = new ArrayList<Expertise>();
 
-        if (choiceExpertiseName.equals("1")) {
+        {/*   if (choiceExpertiseName.equals("1")) {
             Expertise e1 = new Expertise(choiceExpertiseName);
             expertiseAvailable.add(e1);
         }
@@ -144,7 +144,7 @@ public class SearchingForInformation {
             Expertise e6 = new Expertise(choiceExpertiseName);
             e6.giveTheExpertiseNameByTheChoiceFromMentalHealthProblems();
             expertiseAvailable.add(e6);
-        }
+        }*/}
 
         Scanner moreChoices = new Scanner(System.in);
         System.out.print("Is there another expertise available? Type Y (yes) or N (no): ");
@@ -161,7 +161,7 @@ public class SearchingForInformation {
         String extraChoiceExpertiseName = choiceExpertiseName2;
         System.out.println("The extra choice that is made is number: " + extraChoiceExpertiseName);
 
-        if (extraChoiceExpertiseName.equals("1")) {
+        {/*    if (extraChoiceExpertiseName.equals("1")) {
             Expertise ce1 = new Expertise(extraChoiceExpertiseName);
             ce1.giveTheExpertiseNameByTheChoiceFromMentalHealthProblems();
             expertiseAvailable.add(ce1);
@@ -195,7 +195,7 @@ public class SearchingForInformation {
             Expertise ce6 = new Expertise(extraChoiceExpertiseName);
             ce6.giveTheExpertiseNameByTheChoiceFromMentalHealthProblems();
             expertiseAvailable.add(ce6);
-        }
+        }*/}
 
         //indicate if the refer from the family doctor is necessary for health insurance
         Scanner health_insurance = new Scanner(System.in);

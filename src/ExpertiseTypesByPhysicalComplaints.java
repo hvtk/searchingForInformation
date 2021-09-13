@@ -1,6 +1,6 @@
 public class ExpertiseTypesByPhysicalComplaints {
 
-    public void giveTheExpertiseNameByTheChoiceFromPhysicalComplaints() {
+    {/*}   public void giveTheExpertiseNameByTheChoiceFromPhysicalComplaints() {
         switch (expertiseName) {
             case "1":
                 setExpertiseName("Abdominal pains");
@@ -30,5 +30,5 @@ public class ExpertiseTypesByPhysicalComplaints {
                 expertiseName = "No choice has been made.";
         }
         System.out.println("The selected expertise is: " + expertiseName);
-    }
+    }*/}
 }

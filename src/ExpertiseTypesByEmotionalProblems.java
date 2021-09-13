@@ -1,6 +1,6 @@
 public class ExpertiseTypesByEmotionalProblems {
 
-    public void giveTheExpertiseNameByTheChoiceFromEmotionalProblems() {
+    {/*}  public void giveTheExpertiseNameByTheChoiceFromEmotionalProblems() {
         switch (expertiseName) {
             case "1":
                 setExpertiseName("Self confidence");
@@ -26,5 +26,5 @@ public class ExpertiseTypesByEmotionalProblems {
                 expertiseName = "No choice has been made.";
         }
         System.out.println("The selected expertise is: " + expertiseName);
-    }
+    }*/}
 }

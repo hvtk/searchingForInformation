@@ -1,6 +1,6 @@
-public class ExpertiseTypeByMentalHealthProblems extends Expertise {
+public class ExpertiseTypeByMentalHealthProblems {
 
-    private String expertiseName;
+    {/*} private String expertiseName;
 
     public ExpertiseTypeByMentalHealthProblems() {
         super();
@@ -45,6 +45,6 @@ public class ExpertiseTypeByMentalHealthProblems extends Expertise {
                 expertiseName = "No choice has been made.";
         }
         System.out.println("The selected expertise is: " + expertiseName);
-    }
+    }*/}
 
 }

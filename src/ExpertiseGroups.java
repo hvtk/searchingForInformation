@@ -1,4 +1,5 @@
-public enum ProblemTypes {
+public enum ExpertiseGroups {
+
     PHYSICALVIOLENCE,
     EMOTIONALPROBLEMS,
     MENTHALHEALTHPROBLEMS,
@@ -6,25 +7,26 @@ public enum ProblemTypes {
     ;
 
     public static void physicalViolence() {
-       System.out.println("The problemtype is Physicalviolence");
-       System.out.println("This problemtype consists the following expertise:");
-       System.out.println("Choice 1: dometic violence");
-       System.out.println("Choice 2: child abuse");
-       System.out.println("Choice 3: violence");
+        System.out.println("The expertisegroup is Physicalviolence");
+        System.out.println("This expertisegroup consists the following expertise:");
+        System.out.println("Choice 1: dometic violence");
+        System.out.println("Choice 2: child abuse");
+        System.out.println("Choice 3: violence");
     }
 
     public static void emotionalProblems() {
-        System.out.println("The problemtype is emotionalproblems");
-        System.out.println("This problemtype consists the following expertise:");
+        System.out.println("The expertisegroup is emotionalproblems");
+        System.out.println("This expertisegroup consists the following expertise:");
         System.out.println("Choice 1: self confidence");
         System.out.println("Choice 2: stressed out");
         System.out.println("Choice 3: worry about");
         System.out.println("Choice 4: guilty feelings");
         System.out.println("Choice 5: loneliness");
     }
+
     public static void menthalHealthProblems() {
-        System.out.println("The problemtype is menthalhealthproblems");
-        System.out.println("This problemtype consists the following expertise:");
+        System.out.println("The expertisegroup is menthalhealthproblems");
+        System.out.println("This expertisegroup consists the following expertise:");
         System.out.println("Choice 1: fear");
         System.out.println("Choice 2: panic");
         System.out.println("Choice 3: depression");
@@ -34,8 +36,8 @@ public enum ProblemTypes {
     }
 
     public static void physicalComplaints() {
-        System.out.println("The problemtype is physicalcomplaints");
-        System.out.println("This problemtype consists the following expertise:");
+        System.out.println("The expertisegroup is physicalcomplaints");
+        System.out.println("This expertisegroup consists the following expertise:");
         System.out.println("Choice 1: abdominalPains");
         System.out.println("Choice 2: headache");
         System.out.println("Choice 3: constant tiredness");
