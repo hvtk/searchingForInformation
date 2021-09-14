@@ -17,3 +17,4 @@ public class Expertise {
         this.expertiseGroups = expertiseGroups;
     }
 }
+

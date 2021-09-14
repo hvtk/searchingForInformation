@@ -147,6 +147,13 @@ public class SearchingForInformation {
 
         //to make a arraylist from available expertise per aidworker
         ArrayList<Expertise>expertiseAvailable = new ArrayList<Expertise>();
+        //bedenken hoe je de keuze van de expertisegroep kan verwerken in de selectie van de expertisenaam, omdat de namen per expertisegroep verschillend zijn
+        if(choiceExpertiseName.equals("2")) {
+            ExpertiseNamesByEmotionalProblems eBEP1 = new ExpertiseNamesByEmotionalProblems();
+            eBEP1.setExpertiseNameBEP("2");
+            eBEP1.giveTheExpertiseNameByTheChoiceFromEmotionalProblems();
+            expertiseAvailable.add(eBEP1);
+        }
 
         {/* if (choiceExpertiseName.equals("1")) {
             Expertise e1 = new Expertise(choiceExpertiseName);

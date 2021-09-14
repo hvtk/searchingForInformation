@@ -47,4 +47,8 @@ public class ExpertiseNamesByEmotionalProblems extends Expertise {
         }
         System.out.println("The selected expertise is: " + expertiseNameBEP);
     }
+
+    public String toString() {
+        return expertiseNameBEP;
+    }
 }
