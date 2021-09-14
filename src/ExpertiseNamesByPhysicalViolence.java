@@ -1,22 +1,42 @@
-public class ExpertiseNamesByPhysicalViolence {
+public class ExpertiseNamesByPhysicalViolence extends Expertise {
 
-     public void giveTheExpertiseNameByTheChoiceFromPhysicalViolence() {
-        switch (expertiseName) {
+    private String expertiseNameBPV;
+
+    public ExpertiseNamesByPhysicalViolence() {
+        super();
+        expertiseNameBPV = "";
+    }
+
+    public ExpertiseNamesByPhysicalViolence(ExpertiseGroups expertiseGroups, String expertiseNameBPV) {
+        super(expertiseGroups);
+        this.expertiseNameBPV = expertiseNameBPV;
+    }
+
+    public String getExpertiseNameBPV() {
+        return expertiseNameBPV;
+    }
+
+    public void setExpertiseNameBPV(String expertiseNameBPV) {
+        this.expertiseNameBPV = expertiseNameBPV;
+    }
+
+    public void giveTheExpertiseNameByTheChoiceFromPhysicalViolence() {
+        switch (expertiseNameBPV) {
             case "1":
-                setExpertiseName("Dometic violence");
-                System.out.println("De aanwezige expertise is " + getExpertiseName() );
+                setExpertiseNameBPV("Dometic violence");
+                System.out.println("De aanwezige expertise is " + getExpertiseNameBPV() );
                 break;
             case "2":
-                setExpertiseName("Child abuse");
-                System.out.println("De aanwezige expertise is " + getExpertiseName() );
+                setExpertiseNameBPV("Child abuse");
+                System.out.println("De aanwezige expertise is " + getExpertiseNameBPV() );
                 break;
             case "3":
-                setExpertiseName("Violence");
-                System.out.println("De aanwezige expertise is " + getExpertiseName() );
+                setExpertiseNameBPV("Violence");
+                System.out.println("De aanwezige expertise is " + getExpertiseNameBPV() );
                 break;
             default:
-                expertiseName = "No choice has been made.";
+                expertiseNameBPV = "No choice has been made.";
         }
-        System.out.println("The selected expertise is: " + expertiseName);
+        System.out.println("The selected expertise is: " + expertiseNameBPV);
     }
 }

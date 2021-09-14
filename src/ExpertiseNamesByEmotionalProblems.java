@@ -1,30 +1,50 @@
-public class ExpertiseNamesByEmotionalProblems {
+public class ExpertiseNamesByEmotionalProblems extends Expertise {
 
-     public void giveTheExpertiseNameByTheChoiceFromEmotionalProblems() {
-        switch (expertiseName) {
+    private String expertiseNameBEP;
+
+    public ExpertiseNamesByEmotionalProblems() {
+        super();
+        expertiseNameBEP = "";
+    }
+
+    public ExpertiseNamesByEmotionalProblems(ExpertiseGroups expertiseGroups, String expertiseNameBEP) {
+        super(expertiseGroups);
+        this.expertiseNameBEP = expertiseNameBEP;
+    }
+
+    public String getExpertiseNameBEP() {
+        return expertiseNameBEP;
+    }
+
+    public void setExpertiseNameBEP(String expertiseNameBEP) {
+        this.expertiseNameBEP = expertiseNameBEP;
+    }
+
+    public void giveTheExpertiseNameByTheChoiceFromEmotionalProblems() {
+        switch (expertiseNameBEP) {
             case "1":
-                setExpertiseName("Self confidence");
-                System.out.println("De aanwezige expertise is " + getExpertiseName() );
+                setExpertiseNameBEP("Self confidence");
+                System.out.println("De aanwezige expertise is " + getExpertiseNameBEP() );
                 break;
             case "2":
-                setExpertiseName("Stressed out");
-                System.out.println("De aanwezige expertise is " + getExpertiseName() );
+                setExpertiseNameBEP("Stressed out");
+                System.out.println("De aanwezige expertise is " + getExpertiseNameBEP() );
                 break;
             case "3":
-                setExpertiseName("Worry about");
-                System.out.println("De aanwezige expertise is " + getExpertiseName() );
+                setExpertiseNameBEP("Worry about");
+                System.out.println("De aanwezige expertise is " + getExpertiseNameBEP() );
                 break;
             case "4":
-                setExpertiseName("Guilty feelings");
-                System.out.println("De aanwezige expertise is " + getExpertiseName() );
+                setExpertiseNameBEP("Guilty feelings");
+                System.out.println("De aanwezige expertise is " + getExpertiseNameBEP() );
                 break;
             case "5":
-                setExpertiseName("Loneliness");
-                System.out.println("De aanwezige expertise is " + getExpertiseName() );
+                setExpertiseNameBEP("Loneliness");
+                System.out.println("De aanwezige expertise is " + getExpertiseNameBEP() );
                 break;
             default:
-                expertiseName = "No choice has been made.";
+                expertiseNameBEP = "No choice has been made.";
         }
-        System.out.println("The selected expertise is: " + expertiseName);
+        System.out.println("The selected expertise is: " + expertiseNameBEP);
     }
 }
