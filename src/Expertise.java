@@ -1,40 +1,19 @@
 public class Expertise {
 
-   // private String expertiseName;
     private ExpertiseGroups expertiseGroups;
+
+    public Expertise() {
+    }
 
     public Expertise(ExpertiseGroups expertiseGroups) {
         this.expertiseGroups = expertiseGroups;
     }
 
-   // public Expertise(String expertiseName) {
-     //   this.expertiseName = expertiseName;
-   // }
-
-   // public String getExpertiseName() {
-   //     return expertiseName;
-   // }
-
-  //  public void setExpertiseName(String expertiseName) {
-   //     this.expertiseName = expertiseName;
-   // }
-
-    public ExpertiseGroups getExpertiseTypes() {
+    public ExpertiseGroups getExpertiseGroups() {
         return expertiseGroups;
     }
 
-    public void setExpertiseTypes(ExpertiseGroups expertiseGroups) {
+    public void setExpertiseGroups(ExpertiseGroups expertiseGroups) {
         this.expertiseGroups = expertiseGroups;
     }
-
-
-
-
-
-
-
-
-   // public String toString() {
-   // return expertiseName + "";
-   // }
 }

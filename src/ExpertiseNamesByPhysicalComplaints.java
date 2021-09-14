@@ -1,50 +1,34 @@
-public class ExpertiseTypeByMentalHealthProblems {
+public class ExpertiseNamesByPhysicalComplaints {
 
-    {/*} private String expertiseName;
-
-    public ExpertiseTypeByMentalHealthProblems() {
-        super();
-        expertiseName = "";
-    }
-
-    public String getExpertiseName() {
-        return expertiseName;
-    }
-
-    public void setExpertiseName(String expertiseName) {
-        this.expertiseName = expertiseName;
-    }
-
-    public void giveTheExpertiseNameByTheChoiceFromMentalHealthProblems() {
+    public void giveTheExpertiseNameByTheChoiceFromPhysicalComplaints() {
         switch (expertiseName) {
             case "1":
-                setExpertiseName("Fear knowledge");
+                setExpertiseName("Abdominal pains");
                 System.out.println("De aanwezige expertise is " + getExpertiseName() );
                 break;
             case "2":
-                setExpertiseName("Panic knowledge");
+                setExpertiseName("Headache");
                 System.out.println("De aanwezige expertise is " + getExpertiseName() );
                 break;
             case "3":
-                setExpertiseName("Depression knowledge");
+                setExpertiseName("Constant tiredness");
                 System.out.println("De aanwezige expertise is " + getExpertiseName() );
                 break;
             case "4":
-                setExpertiseName("Addiction knowledge");
+                setExpertiseName("Palpitations");
                 System.out.println("De aanwezige expertise is " + getExpertiseName() );
                 break;
             case "5":
-                setExpertiseName("Burnout knowledge");
+                setExpertiseName("Intestinal complains");
                 System.out.println("De aanwezige expertise is " + getExpertiseName() );
                 break;
             case "6":
-                setExpertiseName("Suicide knowledge");
+                setExpertiseName("Sore muscles and joints");
                 System.out.println("De aanwezige expertise is " + getExpertiseName() );
                 break;
             default:
                 expertiseName = "No choice has been made.";
         }
         System.out.println("The selected expertise is: " + expertiseName);
-    }*/}
-
+    }
 }

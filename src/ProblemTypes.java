@@ -1,7 +1,7 @@
 public enum ProblemTypes {
     PHYSICALVIOLENCE,
     EMOTIONALPROBLEMS,
-    MENTHALHEALTHPROBLEMS,
+    MENTALHEALTHPROBLEMS,
     PHYSICALCOMPLAINTS
     ;
 
@@ -22,8 +22,8 @@ public enum ProblemTypes {
         System.out.println("Choice 4: guilty feelings");
         System.out.println("Choice 5: loneliness");
     }
-    public static void menthalHealthProblems() {
-        System.out.println("The problemtype is menthalhealthproblems");
+    public static void mentalHealthProblems() {
+        System.out.println("The problemtype is mentalhealthproblems");
         System.out.println("This problemtype consists the following expertise:");
         System.out.println("Choice 1: fear");
         System.out.println("Choice 2: panic");

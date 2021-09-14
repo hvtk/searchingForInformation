@@ -27,7 +27,7 @@ public class SearchingForInformation {
         Scanner problem_type = new Scanner(System.in);
         System.out.println("Make a choice of one of the problem-groups below: ");
         System.out.println("Choice 1: Emotional problems");
-        System.out.println("Choice 2: Menthal health problems");
+        System.out.println("Choice 2: Mental health problems");
         System.out.println("Choice 3: Physical complaints");
         System.out.println("Choice 4: Physical violence");
         System.out.print("The choice is: ");
@@ -42,9 +42,9 @@ public class SearchingForInformation {
             ProblemTypes.emotionalProblems();
         }
         if (choice == 2) {
-            String problem2 = "MENTHALHEALTHPROBLEMS";
+            String problem2 = "MENTALHEALTHPROBLEMS";
             Problem p2 = new Problem(ProblemTypes.valueOf(problem2));
-            ProblemTypes.menthalHealthProblems();
+            ProblemTypes.mentalHealthProblems();
         }
         if (choice == 3) {
             String problem3 = "PHYSICALCOMPLAINTS";
