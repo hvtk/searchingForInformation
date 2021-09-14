@@ -100,6 +100,43 @@ public class SearchingForInformation {
         System.out.println("De aidworker heet: " + aidWorkerName1 + " en heeft als webadres: " + aidWorkerWebAddress1);
         AidWorker a1 = new AidWorker(aidWorkerName, aidWorkerWebAddress);
 
+        //select a expertise group from enum ExpertiseGroup
+        Scanner expertise_group = new Scanner(System.in);
+        System.out.println("Make a choice of one of the expertise-groups below: ");
+        System.out.println("Choice 1: Expertise in Emotional problems");
+        System.out.println("Choice 2: Expertise in Mental health problems");
+        System.out.println("Choice 3: Expertise in Physical complaints");
+        System.out.println("Choice 4: Expertise in Physical violence");
+        System.out.print("The choice is: ");
+
+        //gives a overview of the different expertisenames inside a expertisegroup
+        int nameExpertiseGroup = expertise_group.nextInt();
+        int choiceEG = nameExpertiseGroup;
+        System.out.println("The choice number is: " + choiceEG);
+        if (choiceEG == 1) {
+            String expertiseGroup1 = "EMOTIONALPROBLEMS";
+            Expertise e1 = new Expertise(ExpertiseGroups.valueOf(expertiseGroup1));
+            ExpertiseGroups.emotionalProblems();
+        }
+        if (choiceEG == 2) {
+            String expertiseGroup2 = "MENTALHEALTHPROBLEMS";
+            Expertise e2 = new Expertise(ExpertiseGroups.valueOf(expertiseGroup2));
+            ExpertiseGroups.mentalHealthProblems();
+        }
+        if (choiceEG == 3) {
+            String expertiseGroup3 = "PHYSICALCOMPLAINTS";
+            Expertise e3 = new Expertise(ExpertiseGroups.valueOf(expertiseGroup3));
+            ExpertiseGroups.physicalComplaints();
+        }
+        if (choiceEG == 4) {
+            String expertiseGroup4 = "PHYSICALVIOLENCE";
+            Expertise p4 = new Expertise(ExpertiseGroups.valueOf(expertiseGroup4));
+            ExpertiseGroups.physicalViolence();
+        }
+        if (choice >4) {
+            System.out.println("There is not a resistant choice selected!");
+        }
+
         Scanner expertiseNames = new Scanner(System.in);
         System.out.print("The choice is: ");
 
@@ -111,7 +148,7 @@ public class SearchingForInformation {
         //to make a arraylist from available expertise per aidworker
         ArrayList<Expertise>expertiseAvailable = new ArrayList<Expertise>();
 
-        {/*   if (choiceExpertiseName.equals("1")) {
+        {/* if (choiceExpertiseName.equals("1")) {
             Expertise e1 = new Expertise(choiceExpertiseName);
             expertiseAvailable.add(e1);
         }
